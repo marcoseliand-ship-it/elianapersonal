@@ -200,3 +200,16 @@ font-size:14px;
     color:#fff;
     text-decoration:none;
 }
+
+@media (max-width: 480px) {
+    .card {
+        width: 92vw;
+        padding: 24px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+}

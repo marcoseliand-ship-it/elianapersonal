@@ -48,7 +48,7 @@ $sucesso = isset($_GET['sucesso']) && $_GET['sucesso'] === '1';
                 <button>Entrar</button>
 
                 <div class="links">
-                    <a href="#">Esqueci minha senha</a>
+                    <a href="recuperar_senha.php" id="linkRecuperarSenha">Esqueci minha senha</a>
                     <a href="cadastro.php">Criar conta</a>
                 </div>
 

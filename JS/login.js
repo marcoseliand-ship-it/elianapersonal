@@ -8,6 +8,8 @@ const tipo=document.getElementById("tipo");
 
 const erro=document.getElementById("erro");
 
+const linkRecuperar=document.getElementById("linkRecuperarSenha");
+
 document
 .getElementById("mostrarSenha")
 .addEventListener("click",()=>{
@@ -20,6 +22,13 @@ senha.type==="password"
 "password";
 
 });
+
+if(linkRecuperar){
+linkRecuperar.addEventListener("click",(e)=>{
+    e.preventDefault();
+    window.location.href="recuperar_senha.php";
+});
+}
 
 form.addEventListener("submit",(e)=>{
 
