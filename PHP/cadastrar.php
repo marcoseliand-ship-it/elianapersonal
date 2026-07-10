@@ -48,7 +48,7 @@ if ($conn->query($sql)) {
     $_SESSION['id'] = $conn->insert_id;
     $_SESSION['nome'] = $nome;
     $_SESSION['tipo'] = $tipo;
-    header('Location: ../HTML/login.php?sucesso=1');
+    header('Location: ../index/login.php?sucesso=1');
     exit();
 }
 

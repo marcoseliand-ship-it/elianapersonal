@@ -53,11 +53,11 @@ if ($resultado->num_rows == 1) {
         $_SESSION['tipo'] = $tipoBanco;
 
         if ($tipoBanco == 'admin') {
-            header('Location: ../HTML/dashboard.php');
+            header('Location: ../index/dashboard.php');
             exit();
         }
 
-        header('Location: ../HTML/agenda.php');
+        header('Location: ../index/agenda.php');
         exit();
     }
 

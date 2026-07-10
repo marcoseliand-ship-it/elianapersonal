@@ -3,7 +3,7 @@ session_start();
 require 'conectar.php';
 
 if (!isset($_SESSION['id'])) {
-    header('Location: ../HTML/login.php');
+    header('Location: ../index/login.php');
     exit();
 }
 
@@ -17,7 +17,7 @@ if ($nome === '') {
 
 $sql = "INSERT INTO treinos (aluno_id, nome, descricao) VALUES ($alunoId, '$nome', '$descricao')";
 if ($conn->query($sql)) {
-    header('Location: ../HTML/meu_treino.php');
+    header('Location: ../index/meu_treino.php');
     exit();
 }
 

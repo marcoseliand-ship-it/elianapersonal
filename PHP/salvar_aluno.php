@@ -13,7 +13,7 @@ if ($nome === '') {
 
 $sql = "INSERT INTO alunos (nome, email, telefone, plano, status) VALUES ('$nome', '$email', '$telefone', '$plano', '$status')";
 if ($conn->query($sql)) {
-    header('Location: ../HTML/dashboard.php');
+    header('Location: ../index/dashboard.php');
     exit();
 }
 
