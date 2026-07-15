@@ -190,25 +190,59 @@ footer{
 
 }
 
-@media(max-width:768px){
+
+/* ==========================
+   RESPONSIVIDADE 480px
+==========================*/
+
+@media(max-width:480px){
 
 header{
 
-    flex-direction:column;
+    padding:15px 5%;
 
 }
 
-nav{
+.hero{
 
-    flex-direction:column;
+    height:auto;
 
-    margin-top:20px;
+    min-height:70vh;
+
+    padding:40px 20px;
 
 }
 
 .hero h1{
 
-    font-size:35px;
+    font-size:28px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+section{
+
+    padding:40px 5%;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.btn,
+.btn-whatsapp{
+
+    padding:12px 25px;
+
+    font-size:14px;
 
 }
 
